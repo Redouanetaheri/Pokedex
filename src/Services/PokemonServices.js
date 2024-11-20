@@ -1,7 +1,7 @@
 import axios from "axios";
 
-function getAllPokemon(id) {
-  return axios.get("https://pokeapi.co/api/v2/pokemon/");
+function getAllPokemon(offset,limit) {
+  return axios.get("https://pokeapi.co/api/v2/pokemon?offset="+offset+"&limit="+limit);
 }
 
 export default {
